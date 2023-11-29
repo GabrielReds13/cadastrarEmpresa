@@ -1,0 +1,22 @@
+create database empr_system;
+use empr_system;
+
+create table Empresa
+(
+	id_emp int primary key auto_increment not null,
+    nome_fantasia_emp varchar(100) not null,
+	razao_social_emp varchar(100) not null,
+	situacao_cadastral_emp varchar(100) not null,
+	cpf_emp varchar(100) not null,
+	cnpj_emp varchar(100) not null,
+	inicio_ativ_emp date not null,
+	telefone_emp varchar(100) not null,
+	porte_empresa_emp varchar(100) not null,
+	regime_trib_emp varchar(100) not null,
+	tipo_emp varchar(100) not null,
+	natureza_juri_emp varchar(100) not null,
+	capital_social_emp double not null,
+	endereco_emp varchar(100) not null
+);
+
+select * from Empresa;
